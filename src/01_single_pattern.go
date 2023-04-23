@@ -17,7 +17,7 @@ func GetInstance() *Singleton {
 	return instance
 }
 
-func main() {
+func main01() {
 	s1 := GetInstance()
 	s2 := GetInstance()
 	if s1 == s2 {
