@@ -1,4 +1,4 @@
-package main
+package simple_factory
 
 import "fmt"
 
@@ -35,7 +35,7 @@ func (f *Factory) CreateProduct(name string) Product {
 	}
 }
 
-func main02() {
+func main() {
 	factory := &Factory{}
 	productA := factory.CreateProduct("A")
 	productB := factory.CreateProduct("B")

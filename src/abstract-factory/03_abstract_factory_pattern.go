@@ -1,4 +1,4 @@
-package main
+package abstract_factory
 
 import "fmt"
 
