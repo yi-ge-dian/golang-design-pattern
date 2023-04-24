@@ -35,7 +35,7 @@ func (f *Factory) CreateProduct(name string) Product {
 	}
 }
 
-func main() {
+func main02() {
 	factory := &Factory{}
 	productA := factory.CreateProduct("A")
 	productB := factory.CreateProduct("B")
