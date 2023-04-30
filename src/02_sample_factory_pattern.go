@@ -1,8 +1,8 @@
-package simple_factory
+package main
 
 import "fmt"
 
-// Product 接口定义
+// Product_ 接口定义
 type Product interface {
 	GetName() string
 }
@@ -11,14 +11,14 @@ type Product interface {
 type ProductA struct{}
 
 func (p *ProductA) GetName() string {
-	return "Product A"
+	return "Product_ A"
 }
 
 // ProductB 类
 type ProductB struct{}
 
 func (p *ProductB) GetName() string {
-	return "Product B"
+	return "Product_ B"
 }
 
 // Factory 工厂类
@@ -35,10 +35,10 @@ func (f *Factory) CreateProduct(name string) Product {
 	}
 }
 
-func main() {
+func CallSampleFactoryPattern() {
 	factory := &Factory{}
 	productA := factory.CreateProduct("A")
 	productB := factory.CreateProduct("B")
-	fmt.Println(productA.GetName()) // Output: Product A
-	fmt.Println(productB.GetName()) // Output: Product B
+	fmt.Println(productA.GetName()) // Output: Product_ A
+	fmt.Println(productB.GetName()) // Output: Product_ B
 }

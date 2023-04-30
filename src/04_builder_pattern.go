@@ -2,8 +2,8 @@ package main
 
 import "fmt"
 
-// Product 类
-type Product struct {
+// Product_ 类
+type Product_ struct {
 	PartA string
 	PartB string
 	PartC string
@@ -14,13 +14,13 @@ type Builder interface {
 	BuildPartA()
 	BuildPartB()
 	BuildPartC()
-	GetProduct() *Product
+	GetProduct() *Product_
 }
 
 // 具体建造者类
 
 type ConcreteBuilder struct {
-	product *Product
+	product *Product_
 }
 
 func (c *ConcreteBuilder) BuildPartA() {
@@ -33,7 +33,7 @@ func (c *ConcreteBuilder) BuildPartC() {
 	c.product.PartC = "Part C"
 }
 
-func (c *ConcreteBuilder) GetProduct() *Product {
+func (c *ConcreteBuilder) GetProduct() *Product_ {
 	return c.product
 }
 
@@ -53,8 +53,8 @@ func (d *Director) Construct() {
 	d.builder.BuildPartC()
 }
 
-func main() {
-	concreteBuilder := &ConcreteBuilder{product: &Product{}}
+func CallBuilderPattern() {
+	concreteBuilder := &ConcreteBuilder{product: &Product_{}}
 	director := &Director{builder: concreteBuilder}
 	director.Construct()
 	product := concreteBuilder.GetProduct()

@@ -1,4 +1,4 @@
-package abstract_factory
+package main
 
 import "fmt"
 
@@ -65,7 +65,7 @@ func (m *MacCheckbox) Check() {
 	fmt.Println("Mac checkbox checked")
 }
 
-func main() {
+func CallAbstractFactoryPattern() {
 	var factory GUIFactory
 	// 根据需要选择具体工厂
 	factory = &WinFactory{}

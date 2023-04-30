@@ -1,4 +1,4 @@
-package singleton
+package main
 
 import (
 	"fmt"
@@ -17,7 +17,7 @@ func GetInstance() *Singleton {
 	return instance
 }
 
-func main() {
+func CallSinglePattern() {
 	s1 := GetInstance()
 	s2 := GetInstance()
 	if s1 == s2 {
