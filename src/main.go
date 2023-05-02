@@ -9,6 +9,7 @@ func main() {
 	//CallConfigurePatternHighLevel() // 建造者模式高级
 	//CallPrototypePattern()          // 原型模式
 	//CallAdaptorPattern()            // 适配器模式
-	//CallBridgePattern() // 桥接模式
-	CallObjectTreePattern() // 对象树模式
+	//CallBridgePattern()             // 桥接模式
+	//CallObjectTreePattern()         // 对象树模式
+	CallDecoratorPattern() //装饰器模式
 }
