@@ -1,5 +1,7 @@
 package main
 
+import "github.com/yi-ge-dian/golang-design-pattern/src/structure_type_mode"
+
 func main() {
 	//CallSinglePattern()             // 单例模式
 	//CallSampleFactoryPattern()      // 简单工厂模式
@@ -13,5 +15,5 @@ func main() {
 	//CallObjectTreePattern()         // 对象树模式
 	//CallDecoratorPattern()          // 装饰器模式
 	//CallPipelinePattern()           // 管道模式
-	CallPluginPattern() // 插件模式
+	structure_type_mode.CallPluginPattern() // 插件模式
 }

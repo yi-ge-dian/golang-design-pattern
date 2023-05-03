@@ -1,4 +1,4 @@
-package main
+package structure_type_mode
 
 import "fmt"
 

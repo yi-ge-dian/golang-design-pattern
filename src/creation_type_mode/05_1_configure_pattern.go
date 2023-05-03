@@ -1,4 +1,4 @@
-package main
+package creation_type_mode
 
 import (
 	"fmt"

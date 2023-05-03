@@ -1,4 +1,4 @@
-package main
+package structure_type_mode
 
 import (
 	"encoding/json"
@@ -40,7 +40,9 @@ func GetCloudProvider(name string, filePath string) (Interface, error) {
 
 func CallPluginPattern() {
 	RegisterCloudProvider("gce", newGCECloud)
-	gceCloud, _ := GetCloudProvider("gce", "/Users/wenlongdong/GolandProjects/golang-design-pattern/src/12_plugin_exmaple.json")
+	gceCloud, _ := GetCloudProvider(
+		"gce",
+		"/Users/wenlongdong/GolandProjects/golang-design-pattern/src/structure_type_mode/12_plugin_exmaple.json")
 	fmt.Printf("%v", gceCloud)
 }
 
