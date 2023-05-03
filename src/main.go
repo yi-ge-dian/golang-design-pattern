@@ -16,5 +16,6 @@ func main() {
 	//structure_type_mode.CallDecoratorPattern()         // 装饰器模式
 	//structure_type_mode.CallPipelinePattern()          // 管道模式
 	//structure_type_mode.CallPluginPattern()            // 插件模式
-	behavior_type_mode.CallChainedCallPattern()
+	//behavior_type_mode.CallChainedCallPattern()		// 链式调用模式
+	behavior_type_mode.CallResponsibilityChainPattern()
 }
