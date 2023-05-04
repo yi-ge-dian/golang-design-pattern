@@ -1,8 +1,6 @@
 package main
 
-import (
-	"github.com/yi-ge-dian/golang-design-pattern/src/behavior_type_mode"
-)
+import "github.com/yi-ge-dian/golang-design-pattern/src/behavior_type_mode"
 
 func main() {
 	//creation_type_mode.CallSinglePattern()              // 单例模式
@@ -22,5 +20,6 @@ func main() {
 	//behavior_type_mode.CallResponsibilityChainPattern() //责任链模式
 	//behavior_type_mode.CallObserverPattern()            //观察者模式
 	//behavior_type_mode.CallCacheProxyPattern()          //缓存代理模式
-	behavior_type_mode.CallPolicyPattern() // 策略模式
+	//behavior_type_mode.CallPolicyPattern() // 策略模式
+	behavior_type_mode.CallTemplateMethodPattern() //模版方法模式
 }
