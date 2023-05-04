@@ -18,5 +18,6 @@ func main() {
 	//structure_type_mode.CallPluginPattern()            // 插件模式
 	//behavior_type_mode.CallChainedCallPattern()		// 链式调用模式
 	//behavior_type_mode.CallResponsibilityChainPattern() //责任链模式
-	behavior_type_mode.CallObserverPattern()
+	//behavior_type_mode.CallObserverPattern()   //观察者模式
+	behavior_type_mode.CallCacheProxyPattern() //缓存代理模式
 }
